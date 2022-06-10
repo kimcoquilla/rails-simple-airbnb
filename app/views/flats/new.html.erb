@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <h1>Simple Airbnb</h1>
+      </div>
+</nav>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-12">
+      <h2>New Flat:</h2>
+      <div class="d-flex justify-content-center">
+      <%= form_for @flat do |f| %>
+      <%= f.label "Name: " %>
+      <%= f.text_field :name %>
+      <br /> <br />
+      <%= f.label "Address: " %>
+      <%= f.text_field :address %>
+      <br /> <br />
+      <%= f.label "Description: " %>
+      <%= f.text_area :description %>
+      <br /> <br />
+      <%= f.label "Price per night: " %>
+      <%= f.number_field :price_per_night %>
+      <br /> <br />
+      <%= f.label "Number of guest: " %>
+      <%= f.number_field :number_of_guests %>
+      <br /> <br />
+      <%= f.submit 'Add a Flat', class: "btn btn-primary confirm-btn" %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
