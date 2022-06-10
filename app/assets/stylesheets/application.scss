@@ -14,3 +14,24 @@
  *= require_self
  */
  @import "bootstrap/scss/bootstrap";
+
+ .footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #e3f2fdc7;
+  margin: 0px;
+  width:100%;
+  height: fit-content;
+  color: gray;
+  text-align: center;
+}
+
+.icon {
+  text-align: center;
+}
+
+.fab {
+  color: rgb(182, 101, 158);
+  font-size: 30px;
+  margin: 10px;
+}
