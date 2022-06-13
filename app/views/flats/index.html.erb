@@ -5,35 +5,36 @@
   </div>
 </nav>
 <div class="container mt-3">
-<div class="row">
-<div class="col-12">
-<h1>All Flats</h1>
-</div>
-</div>
-<div class="row">
-<% @flats.each do |flat| %>
-<div class="col-4">
-<div class="flat-card">
-<div class="flat-card-image" style="background-image: url('https://unsplash.it/200/200?random')"></div>
-<div class="flat-card-content">
-<div class="flat-card-title">
-<h4><%= flat.name %></h4>
-</div>
-<p><%= flat.address %></p>
-<div class="flex">
-<div class="flex">
-<i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
-</div>
-<div class="flex ml-3">
-<i class="material-icons mr-2">euro_symbol</i><span><%= flat.price_per_night %></span>
-</div>
-</div>
-</div>
-<div class="flat-card-actions">
-<%= link_to 'More info', flat_path(flat) %>
-</div>
-</div>
-</div>
-<% end %>
-</div>
+  <div class="row">
+    <div class="col-12">
+      <h1>All Flats</h1>
+    </div>
+  </div>
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="col-4">
+      <div class="flat-card">
+        <div class="flat-card-image" style="background-image: url('https://unsplash.it/200/200?random')"></div>
+          <div class="flat-card-content">
+            <div class="flat-card-title">
+              <h4><%= flat.name %></h4>
+            </div>
+              <p><%= flat.address %></p>
+            <div class="flex">
+              <div class="flex">
+                <i class="material-icons mr-2">people</i><span><%= flat.number_of_guests %></span>
+              </div>
+              <div class="flex ml-3">
+                <i class="material-icons mr-2">euro_symbol</i><span><%= flat.price_per_night %></span>
+              </div>
+            </div>
+          </div>
+          <div class="flat-card-actions">
+            <%= link_to 'More info', flat_path(flat) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    </div>
+  </div>
 </div>
