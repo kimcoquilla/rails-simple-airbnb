@@ -4,3 +4,19 @@
      <%= link_to 'Home', flats_path %>
       </div>
 </nav>
+  <div class="mt-4 mb-3">
+    <h1 class="small-title mt-4"><%= @flat.name %></h1>
+    <p class="mb-2"><%=@flat.address %> cm</p>
+  </div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 mt-2 mb-2">
+        <img
+          src="https://unsplash.it/600/600?random"
+          alt="Table Full of Spices"
+          class=" shadow-1-strong gallery-container image shorty-image big-shorty-image"
+        />
+      </div>
+    </div>
+  </div>
