@@ -4,6 +4,10 @@
      <%= link_to 'Home', flats_path %>
   </div>
 </nav>
+<div class="container">
+  <div class="row">
+    <div class="d-flex justify-content-between">
+      <div class="col col-12">
 <div class="mt-4 mb-3">
   <h1 class="small-title mt-4"><%= @flat.name %></h1>
   <p class="mb-2"><%=@flat.address %> cm</p>
@@ -27,4 +31,8 @@
     <i class="material-icons mr-2">euro_symbol</i><span><%= @flat.price_per_night %></span>
   </div>
 </div>
+</div>
+      </div>
+    </div>
+  </div>
 </div>
